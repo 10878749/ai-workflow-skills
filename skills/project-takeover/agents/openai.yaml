@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目接手与续接"
+  short_description: "核实工作目录、源码与运行版本，恢复当前状态并形成可继续执行的交接记录"
+  default_prompt: "使用 $project-takeover 接手当前项目，核实工作目录、源码与运行版本、验证状态和未完成事项，并按本轮目标继续工作。"

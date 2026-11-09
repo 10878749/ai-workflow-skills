@@ -1,0 +1,17 @@
+{
+  "name": "ai-workflow-kit",
+  "version": "0.1.0",
+  "description": "来自真实项目的 AI 产品与工程工作流：需求、复用、接手、实施、验证与交付，包含工作闭环基础版。",
+  "author": {
+    "name": "10878749",
+    "url": "https://github.com/10878749"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI 产品与工程工作流工具集",
+    "shortDescription": "把真实项目实践整理成可复用、可核对的工作方法"
+  },
+  "repository": "https://github.com/10878749/ai-workflow-skills",
+  "homepage": "https://ai-workflow-kit-wj.fumika981117.chatgpt.site"
+}

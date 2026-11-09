@@ -1,0 +1,15 @@
+name: Validate public skill collection
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Rebuild the site and release archives
+        run: python3 scripts/build.py
+      - name: Verify all packaged skill hashes without installing
+        run: python3 scripts/install.py --all
+      - name: Check Python syntax
+        run: python3 -m compileall -q scripts skills

@@ -1,0 +1,4 @@
+interface:
+  display_name: "产品模板提炼与衍生"
+  short_description: "从现有产品提炼可复用能力和领域替换点，隔离身份与数据并验证最小衍生实例"
+  default_prompt: "使用 $product-variant-extraction 从当前产品提炼可衍生模板，并验证一个最小的新领域实例。"

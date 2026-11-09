@@ -1,0 +1,285 @@
+{
+  "name": "ai-workflow-kit",
+  "version": "0.1.0",
+  "author": "10878749",
+  "license": "MIT",
+  "skills": [
+    {
+      "id": "requirements-shaping",
+      "title": "需求收敛与分阶段交付",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "a4241e1c9617c352133136993026e0b61e4a704c7d3c28514a7ec2af36250df9",
+          "bytes": 324
+        },
+        {
+          "path": "references/brief-and-phases.md",
+          "sha256": "7187f3ba333e00db12c23afca45d01f4fc04341313911c891b0fa5a3ca394f8e",
+          "bytes": 1174
+        },
+        {
+          "path": "references/decision-cases.md",
+          "sha256": "2d942c3e297e549674219975c49fd594e5e321061942b0fe9811d91c233053c6",
+          "bytes": 1369
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c1e7199a4a433b7432aee279d95a9c003395e4d44dcd72f0f1be1370daaccdb9",
+          "bytes": 4233
+        }
+      ]
+    },
+    {
+      "id": "reuse-first",
+      "title": "开源方案评估与复用",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "a20541a190f35049a22f014b59d886140f4727cd79db0291923b06b0024b0ec9",
+          "bytes": 353
+        },
+        {
+          "path": "references/evaluation.md",
+          "sha256": "ddfcf5f9d21d9bed8a0ce943acf645901a83535030acac1264ffc1244df4ff5c",
+          "bytes": 5916
+        },
+        {
+          "path": "references/reuse-record.md",
+          "sha256": "8862c9244039062fc7a68c1b931afa332dfd31900b2c48e4d39c45669b177c41",
+          "bytes": 1940
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "0d68946534775cf89d482b92d3b7b837c5d65d0f159fa9a6d1ec9d7f24a44498",
+          "bytes": 7864
+        }
+      ]
+    },
+    {
+      "id": "informed-review",
+      "title": "知情决策与审批",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "e5547d8b718979cbe286504964c3af786cd5ddb60c1ab2044f7f35e7677cc87d",
+          "bytes": 168
+        },
+        {
+          "path": "references/examples.md",
+          "sha256": "74d0cccd46ecfedef07e7b702b4cfb45e52f6b4f6ce837d9eaf541af47c76e87",
+          "bytes": 4439
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e1b2e286033bad4c54a5c8df84e8c9341f682aa03c20a482ded6eabcae76af79",
+          "bytes": 8789
+        }
+      ]
+    },
+    {
+      "id": "project-takeover",
+      "title": "项目接手与续接",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "af5d749eb4bcf45befb1a55d60651ae5ed3d091260d04817c3da8961e9aa4313",
+          "bytes": 359
+        },
+        {
+          "path": "references/handoff-template.md",
+          "sha256": "8957859da90d83758ec193a4274f97518f8daa374c802146685f771764991e01",
+          "bytes": 1961
+        },
+        {
+          "path": "references/identity-checks.md",
+          "sha256": "55e04e0fdfeab598793973f8b3e902ca8b3760141ed327f78982a9fb759975ce",
+          "bytes": 5181
+        },
+        {
+          "path": "scripts/inspect_project.py",
+          "sha256": "22c1f3739b409c47c276e0be8781830ba15d50058ccf9a25df8e9866cc063948",
+          "bytes": 10489
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a53096f6e2b05b6ff8a65b2702f0601eb7d6edf671397d86b29a82b8b67c4019",
+          "bytes": 7956
+        }
+      ]
+    },
+    {
+      "id": "engineering-audit-remediation",
+      "title": "工程审计与渐进整改",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "b3c30f0f7c2717df170954a7a5d23600c0a376bc0ecb4604d593270bd0b48c75",
+          "bytes": 345
+        },
+        {
+          "path": "references/decision-cases.md",
+          "sha256": "4c1d45c299089f28590565d86be2264e0a0e9c4107769953b9ef0ce0bbbca7dc",
+          "bytes": 2698
+        },
+        {
+          "path": "references/templates.md",
+          "sha256": "61f119aa4039bbc2e68fe3805f244f7578df8fd812c5d755bd4701d907569711",
+          "bytes": 3030
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "86c9421da77db30e23f8acfdfc6578b994e6f9393dbaeec29e157a7be7c5f0ce",
+          "bytes": 9130
+        }
+      ]
+    },
+    {
+      "id": "legacy-ai-integration",
+      "title": "旧软件增量接入 AI",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "d9276a8b20a9aeaba929a269529536893244668e1c82f0aad962c6e5eb10d4a8",
+          "bytes": 324
+        },
+        {
+          "path": "references/rollout-and-evaluation.md",
+          "sha256": "586329756ab08fdc29ec631e40d463b5beedcbfb4f5f90aa5fcf6ea07560354b",
+          "bytes": 1589
+        },
+        {
+          "path": "references/tool-contract.md",
+          "sha256": "30ee06b6ccc153ebe34a287f896ac62d10a012ec07e50c832b4057a41c1e582f",
+          "bytes": 2211
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "301d8a50863dfa7514e44694bf67392b56e436304bec82cacbcc5196d32e192f",
+          "bytes": 4390
+        }
+      ]
+    },
+    {
+      "id": "product-variant-extraction",
+      "title": "产品模板提炼与衍生",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "bacf65ed0919fe731f865b0523766a9b0a45bfe383658c7a4d4a4c2ed85cd6b2",
+          "bytes": 327
+        },
+        {
+          "path": "references/variant-map.md",
+          "sha256": "f1b36023f2d9ef18395043654cf82d3a896cba0c8808c70a0f9abb017342dac3",
+          "bytes": 2512
+        },
+        {
+          "path": "scripts/scan_markers.py",
+          "sha256": "5b8fb9daa3a9f9b7c1655fca8148bb6631fcff0c502509bd9441bbc2beff7a0a",
+          "bytes": 6736
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "528a737c2f3054dbbbe6d715ec94fb1bd2793bc6460512362259d254028ba332",
+          "bytes": 4251
+        }
+      ]
+    },
+    {
+      "id": "delivery-acceptance",
+      "title": "按实际用途验收",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "9b4e55befe5f0accf605f313c155926eeec62f0124129adb0afdd8b33089b4a4",
+          "bytes": 314
+        },
+        {
+          "path": "references/acceptance-paths.md",
+          "sha256": "d4f9b20991f2a7f23d803c868358f4b4b22f3d8bbe0f222785ee803ecbf25128",
+          "bytes": 3305
+        },
+        {
+          "path": "references/record-template.md",
+          "sha256": "0425ea99333be2ed16866912ad4063f133ed1494c2d3e5260563f3cec5f42340",
+          "bytes": 1035
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "32ceb720f61ddcdc900f2c38fa06d604388b3d94f9165ebffcf3f75ec7737650",
+          "bytes": 4210
+        }
+      ]
+    },
+    {
+      "id": "software-delivery-evidence",
+      "title": "软件交付材料一致性",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "724232c4e008d1582707f34ff3289bb21ad9ced4d3aa9eff4db1bb344aeeebde",
+          "bytes": 315
+        },
+        {
+          "path": "references/evidence-rules.md",
+          "sha256": "4ff486a8e95822a497698b29544a010cd275a063ad2406edb01ad38601475350",
+          "bytes": 3129
+        },
+        {
+          "path": "references/material-template.md",
+          "sha256": "87326787fb1ad07ce52e02b4a8847c8f8a879127daf5b860ddf028d28b75ae48",
+          "bytes": 925
+        },
+        {
+          "path": "scripts/inventory_package.py",
+          "sha256": "86af26eb1d5d6b4ea2ebaf6b21683d9ece744761f7149e32bce5db37d2a83e27",
+          "bytes": 10106
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "fd45d2e527c3d6f0904a235e3b3529cadccffd2e42ac0bb750aaf850bf2979f4",
+          "bytes": 4130
+        }
+      ]
+    },
+    {
+      "id": "failure-learning",
+      "title": "失败复盘与流程改进",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "51a98075f3cd5f743a6827bc750f0af4c8fbe103ecba2485617cdc41ba1ecfb3",
+          "bytes": 326
+        },
+        {
+          "path": "references/case-and-comparison.md",
+          "sha256": "a097a806503d11019a14620645d3dec1352b78e45fa50e87b38b59613a78d841",
+          "bytes": 1726
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "93b826c5d644c10fb0b77e399209e501f8a7fa4ba83c2360edbebdc3cfbe1b23",
+          "bytes": 4175
+        }
+      ]
+    },
+    {
+      "id": "work-loop-lite",
+      "title": "工作闭环基础版",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "67fdc648b0087452e443fb7b182621fc55fb174832b30008e0d44f7b15363074",
+          "bytes": 321
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "07115c68d9029e91d1f56fea1d3eb6a61edb7a5be007bcfe22d03d7e975c6140",
+          "bytes": 2589
+        }
+      ]
+    }
+  ],
+  "scope": "10 project workflows and independently authored work-loop-lite. No full private loop, project repositories, model credentials or third-party skill caches."
+}

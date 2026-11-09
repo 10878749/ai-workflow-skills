@@ -1,0 +1,74 @@
+{
+  "id": "between-pages",
+  "name": "页间",
+  "label": "AI 消费产品 / 体验与恢复",
+  "date": "2026-09-20",
+  "title": "保留拆书体验，也处理请求中断后的残局。",
+  "intro": "通过情绪线索和拆封交互发现书籍的阅读盲盒，区分轻量随机与 AI 推敲。",
+  "problem": "外部书库与模型的不确定性会影响体验；请求取消遗留全站锁，会让后续访客持续等待。",
+  "decisions": [
+    "把不调用模型的随机抽书与消耗机会的 AI 推敲分开，保留额度耗尽后的轻量路径。",
+    "模型只从真实候选中选择；资料不足、模型失败和额度不足分别处理。",
+    "引入请求级取消、过期租约与受保护的清理流程，避免旧任务覆盖新任务。"
+  ],
+  "outcomes": [
+    "交接记录保存 85 项自动测试及构建、lint 通过的历史结果。",
+    "源码和回归用例包含请求取消、租约释放、退款与中断恢复。",
+    "保留了桌面与手机界面截图；衍生电影或艺术品产品需单独做领域适配。"
+  ],
+  "limits": "85 项为 2026-09-20 交接记录中的结果，本轮静态核对了实现与相关用例，未重新执行全套测试。历史线上抽取复测受 403 阻挡，不能列为真实外部书库端到端验收通过；当前线上可用性未重新验证。",
+  "lesson": "将产品规则、费用边界和失败恢复一起设计，让体验在外部依赖失败时仍可解释。",
+  "skills": [
+    "requirements-shaping",
+    "product-variant-extraction",
+    "failure-learning",
+    "delivery-acceptance"
+  ],
+  "image": "assets/between-pages.png",
+  "image_caption": "项目保留的界面截图；用于展示产品设计，不代表本次重新验收。",
+  "facts": {
+    "历史自动测试": 85,
+    "验证日期": "2026-09-20",
+    "本轮检查": "文档、实现与用例静态核对",
+    "线上抽取复测": "历史记录为 403 阻挡"
+  },
+  "sources": [
+    {
+      "file": "docs/HANDOFF.md",
+      "sha256": "8a56bd85896eca23c6bdc25b3c44032bbc342fa3249d5e0046d3b30ad30cd437",
+      "lines": [
+        1,
+        133
+      ]
+    },
+    {
+      "file": "server/cloud.ts",
+      "sha256": "6f3db6a6e55a63b37c20be0977af27be5a94dcf49505a31453417f0d6ba07e84",
+      "lines": [
+        180,
+        213
+      ]
+    },
+    {
+      "file": "server/task.test.ts",
+      "sha256": "da0f3470a228618202b0e04b553a7d861067d120daeb019e16768c5340005990",
+      "lines": [
+        1,
+        21
+      ]
+    },
+    {
+      "file": "server/api.test.ts",
+      "sha256": "8228ab60f6c8d9c520bfb1a317cb5d58ab5b9617eff231266c74e3a85e0e17e1",
+      "lines": [
+        105,
+        185
+      ]
+    },
+    {
+      "file": "artifacts/home-final-desktop.png",
+      "sha256": "da7efe0e7e59ee6a3440d9cd7237e93920fa070d2581fd04ee2e71303c4d1e33",
+      "kind": "retained_screenshot"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "开源方案评估与复用"
+  short_description: "开发前调研成熟开源方案，以真实证据选型并验证接入，减少重复搭建"
+  default_prompt: "请用 $reuse-first，先寻找并评估适合当前目标的成熟开源方案，选出复用途径，按当前授权完成最小验证或继续实施。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "失败复盘与流程改进"
+  short_description: "从真实失败和纠偏定位可验证原因，改进最近的规则或工具并用旧新案例复核"
+  default_prompt: "使用 $failure-learning 复盘这次失败，用证据定位原因，改进对应机制并核对改进是否有效。"

@@ -1,0 +1,86 @@
+{
+  "id": "guangying",
+  "name": "光赢大师",
+  "label": "工业 AI / 检索与评估",
+  "date": "2026-11-05",
+  "title": "先把检索、许可和效果证据分开。",
+  "intro": "面向焊接知识与工艺建议的 AI 产品。把正式业务、独立实验和待审整改分开推进。",
+  "problem": "知识能被检索到，不代表有权发送给模型；检索命中，也不代表生成结果具备专业工艺资格。",
+  "decisions": [
+    "独立搭建 RAG 对照测试台，避免直接改动正式业务。",
+    "使用 BM25 与 TF-IDF 稀疏检索，经 RRF 融合；逐次确认参考，发送前重核来源快照。",
+    "把检索命中、模拟接口、真实模型与专业评估分别记录，先验证可测的部分。"
+  ],
+  "outcomes": [
+    "318 条记录建立索引：300 条 AI 参考草稿与 18 组仅本地参数分开处理。",
+    "开发检索题 12/12 在前 4 条命中，首条 11/12；23 项模拟浏览器检查通过。",
+    "同一项目的知识发送前复查另有 6 项新增模拟测试；该项当时仅本地待审。"
+  ],
+  "limits": "这是保留的开发验证记录。本轮核对了文档、JSON 和相关实现，未重跑模型或生产服务。开发题不是独立专业评测；真实模型调用为 0，不能据此宣称答案准确率或生产工艺可用。",
+  "lesson": "先建立可追溯的评估和权限边界，再决定是否增加模型与检索复杂度。",
+  "skills": [
+    "reuse-first",
+    "engineering-audit-remediation",
+    "legacy-ai-integration",
+    "delivery-acceptance"
+  ],
+  "image": null,
+  "facts": {
+    "检索记录": 318,
+    "开发题": 12,
+    "Hit@4": 12,
+    "首条命中": 11,
+    "模拟浏览器检查": 23,
+    "真实模型调用": 0
+  },
+  "sources": [
+    {
+      "file": "docs/project/DeepSeek本地RAG测试版验收_20261105.md",
+      "sha256": "e49c38014c47ac41979ef93fda2ded183e964628cf552075832dd0cd9b4236a8",
+      "lines": [
+        1,
+        52
+      ]
+    },
+    {
+      "file": "artifacts/deepseek-rag-lab/20261105/retrieval-smoke.json",
+      "sha256": "65c652fafff69ccd111ddbf71655194563e6d8ba1df00c8f0379002f091af438",
+      "lines": [
+        1,
+        8
+      ]
+    },
+    {
+      "file": "artifacts/deepseek-rag-lab/20261105/browser-verification.json",
+      "sha256": "4719f047947a3280b8f9d3e39b4af0f0bb1907884b555ce211e11594a5666aee",
+      "lines": [
+        1,
+        33
+      ]
+    },
+    {
+      "file": "tools/deepseek_rag_lab.py",
+      "sha256": "2067ae72c959e14d7a979bb221bd9988f038faedac42ea0f3c36eed48869dc8c",
+      "lines": [
+        331,
+        375
+      ]
+    },
+    {
+      "file": "正式接续树/docs/PROJECT_STATUS.md",
+      "sha256": "fcd9626f0e2069171b933da38b7647214bab5970467282ab9c9fcfd34fb4c794",
+      "lines": [
+        1,
+        9
+      ]
+    },
+    {
+      "file": "正式接续树/tests/test_knowledge_send_guard.py",
+      "sha256": "27cf0a34066b87da540628f49abb51dc1a764a59a884b86a1a1667efb8042686",
+      "lines": [
+        86,
+        160
+      ]
+    }
+  ]
+}

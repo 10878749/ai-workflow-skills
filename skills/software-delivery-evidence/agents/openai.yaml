@@ -1,0 +1,4 @@
+interface:
+  display_name: "软件交付材料一致性"
+  short_description: "以实际代码包和运行证据核对组件、统计、变更与交付文档，保留未知项"
+  default_prompt: "使用 $software-delivery-evidence 根据实际交付包核对材料，把每项结论对应到可追溯证据。"

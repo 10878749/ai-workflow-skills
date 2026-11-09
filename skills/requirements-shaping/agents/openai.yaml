@@ -1,0 +1,4 @@
+interface:
+  display_name: "需求收敛与分阶段交付"
+  short_description: "把模糊需求和中途纠偏收敛为明确范围、可演示阶段与可观察的完成条件"
+  default_prompt: "使用 $requirements-shaping 梳理这个想法，明确核心场景、保留行为、当前范围和可验收阶段。"

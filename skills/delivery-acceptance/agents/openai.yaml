@@ -1,0 +1,4 @@
+interface:
+  display_name: "按实际用途验收"
+  short_description: "按真实使用路径核对最终交付版本，区分预览、模拟、真机与真实服务证据"
+  default_prompt: "使用 $delivery-acceptance 按我的实际使用方式验收这次交付，说明已验证结果和剩余缺口。"
