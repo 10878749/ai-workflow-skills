@@ -65,6 +65,16 @@ python -m http.server 8080 --directory dist
 
 ## 发布
 
-本目录支持静态托管。GitHub Pages 可用随附手动工作流发布 `dist/`；首次需在仓库设置中选择 GitHub Actions 作为 Pages 来源，再手动运行 Publish portfolio。日常推送默认只运行公开集合校验，不会因 Pages 尚未配置而自动发布。Sites 的托管身份仅用于作者部署，不进入公开源码 ZIP。下载与源码归档由构建脚本自动生成。
+本目录支持静态托管。GitHub Pages 工作流会在 `main` 分支收到推送时构建并发布 `dist/`，也可手动运行。下载与源码归档由构建脚本自动生成，页面、案例、样式和安装包均随网站一起托管。
+
+首次启用：
+
+1. 打开 https://github.com/10878749/ai-workflow-skills/settings/pages ，将 **Build and deployment → Source** 设为 **GitHub Actions**。
+2. 打开 https://github.com/10878749/ai-workflow-skills/actions/workflows/pages.yml ，单击 **Run workflow**，选择 `main`，再单击 **Run workflow**。
+3. 等待 **Publish portfolio** 成功后，访问 https://10878749.github.io/ai-workflow-skills/ 。这是启用后的目标地址；仅提交工作流不表示网站已经上线。
+
+后续修改公开源码并推送到 `main` 即可自动更新。所有页面资源与下载路径使用相对地址，可部署在 GitHub Pages 的 `/ai-workflow-skills/` 子路径下，无需原 Sites 服务提供资源。GitHub Pages 的国内直连体验需在目标网络实测。
+
+Sites 的托管身份仅用于原站部署，不进入公开源码 ZIP。原展示站可继续作为备用入口。
 
 许可：MIT，参见 LICENSE；归属与素材说明参见 THIRD_PARTY.md。
