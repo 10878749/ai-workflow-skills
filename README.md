@@ -4,7 +4,9 @@
 
 作者标识：10878749。与 AI 协作设计、开发与核查。原项目底层算法、第三方库和素材分别保留原归属；本集合不主张所有依赖均为原创。
 
-展示与下载：https://ai-workflow-kit-wj.fumika981117.chatgpt.site
+展示与下载：https://10878749.github.io/ai-workflow-skills/
+
+备用展示站：https://ai-workflow-kit-wj.fumika981117.chatgpt.site
 
 公开仓库：https://github.com/10878749/ai-workflow-skills
 
